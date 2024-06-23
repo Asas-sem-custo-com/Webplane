@@ -1,0 +1,94 @@
+h4{
+    font-size: 50px;
+}
+.intro{
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+    padding-top: 0px;
+}
+.intro>div{
+    width: 500px;
+    margin: 10px;
+}
+.sonhos{
+    padding: 30px;
+}
+.sonhos>h4{
+    font-size: 50px;
+    color: #e1e1e1;
+}
+.principal>div{
+    width: 500px;
+}
+.imgs{
+    width: 800px;
+}
+.imgs1,.imgs2,.imgs3,.imgs4,.imgs5,.imgs6,.imgs7{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: width 2s, height 2s, color 2s;
+}
+.imgs1{
+    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/663445-abacaxi-com-oculos-vetor.jpg');
+}
+.imgs2{
+    background-image: url('https://www.segueviagem.com.br/wp-content/uploads/2019/04/exuma_shutterstock.jpg');
+}
+.imgs3{
+    background-image: url('https://catracalivre.com.br/cdn-cgi/image/f=auto,q=60,w=1200,h=1200,fit=cover,format=jpeg/wp-content/uploads/2022/05/praia-rifania.jpg');
+}
+.imgs4{
+    background-image: url('https://img.freepik.com/fotos-premium/um-coco-com-oculos-de-sol-e-fones-de-ouvido-na-praia_712151-537.jpg');
+}
+.imgs5{
+    background-image: url('https://blog-static.petlove.com.br/wp-content/uploads/2020/11/todo-cachorro-sabe-nadar-petlove.jpg');
+}
+.imgs6{
+    background-image: url('https://blog.bianch.com.br/wp-content/uploads/2023/06/Capas-Blog-17.png');
+    background-position-x: 10%;
+}
+.imgs7{
+    background-image: url('https://i0.statig.com.br/bancodeimagens/2c/gh/gh/2cghghrjt3ul7qkrxzcfpezvh.jpg');
+}
+.imgs1:hover,.imgs2:hover,.imgs3:hover,.imgs4:hover,.imgs5:hover,.imgs6:hover,.imgs7:hover{
+    width: 1000px;
+    height: 500px;
+}
+.sonhos{
+    width: auto;
+    background-color: #181818;
+}
+.imgs>div>figure{
+    width: 800px;
+    height: 400px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.imgs>div{
+    display: flex;
+}
+/*  */
+.history{
+    padding: 10px;
+    margin: 10px;
+}
+.history>div{
+    display: flex;
+}
+.history>div>div{
+    padding: 10px;
+}
+.history>p{
+    width: 500px;
+}
+.f-img1,.f-img2,.f-img3,.f-img4{
+    height: 200px;
+    border-radius: 20px;
+    transition: box-shadow 2s;
+}
+.f-img1:hover,.f-img2:hover,.f-img3:hover,.f-img4:hover{
+    box-shadow: 10px 10px 0px 0px rgba(255, 244, 244, 0.75);
+}
