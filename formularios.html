@@ -2,47 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="formularios.css">
+    <title>formularios</title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./src/img/AS-cor.png" alt="ASC" height="200"></a>
+            <h2 style="padding: 5px;">Voe <br>com <br>liberdade!</h2>
+        </div>
+        <div class="entrar">
+            <h3>Login</h3>
+            <h3>Sign in</h3>
+        </div>
+    </header>
     <font face="Arial">
     <div>
-        <h1 class="forms">Formulario</h1>
+        
     </div>
-    <hr>
 
-    <div>
-        <form action="
-        ">
-        <label for="">Nome Completo</label>
-        <input type="text">
-        <br>
-        <label for="">Email</label>
-        <input type="text">
-        <br>
-        <label for="">Senha</label>
-        <input type="password">
-        <br>
-        <label for="">CPF</label>
-        <input type="text">
-        <br>
-        <label for="">Data de nascimento</label>
-        <input type="date">
-        <br>
-        <label for="">Numero do cartão de CRÉDITO</label>
-        <input type="text">
-        <br>
-        <label for="">Planos</label>
-        <select name="Planos" size="1">  
-            <option value="Bronze"> Bronze </option>  
-            <option value="Silver"> Silver </option>  
-            <option value="Gold"> Gold </option>  
-            <option value="Platinum"> Platinum </option>  
-        </select> 
+    <div class="div_do_forms">
+        
+        <form class="formul">
+            <h1 class="tes" >Formulario</h1>
+            
+            
+            <label for="">Email</label>
+            <br>
+            <input type="text" required>
+            <br>
+            
+            <label for="">Senha</label>
+            <br>
+            <input type="password" required>
+            <br>
 
-        </font>
+            
+            <label for="">Data de nascimento</label>
+            <br>
+            <input type="date" required>
+            <br>
+            
+            <label for="">Numero do cartão de CRÉDITO</label>
+            <br>
+            <input type="text" required>
+            <br>
+            
+            <label for="">Planos</label>
+            <br>
+            <select name="Planos" size="1">  
+                <option value="Bronze"> Bronze </option>  
+                <option value="Silver"> Silver </option>  
+                <option value="Gold"> Gold </option>  
+                <option value="Platinum"> Platinum </option>  
+            </select> 
+            <br>
+            
+            <input type="submit">
+
+            </font>
         </form>
 
     </div>

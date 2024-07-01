@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    background-color: #e0dfff;
+}
+
+header{
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+}
+header>div{
+    display: flex;
+}
+
+
+.div_do_forms{
+    
+    padding: 20px 50px;
+
+
+}
+.formul{
+    display: block;
+    border: solid 1px #acacac;
+    padding: 15px;
+    border-radius: 14px;
+    justify-content: center;
+    
+
+
+}
+input, select{
+    height: 40px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
