@@ -1,49 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
     font-family: "Nunito", sans-serif;
-    font-size:20px;
+    font-size:17px;
 }
 body{
     margin: 0px;
     background-color: #e0dfff;
 }
+main{
+    overflow: hidden;
+}
+/*  */
 header{
-    padding: 35px;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    background-color: #181818;
+    justify-content: center;
+    height: 100px;
+    top:-50px;
+    z-index: 2;
 }
 header>div{
+    width: 100%;
+    padding-top: 15px;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+.trens{
+    width: 1000px;
+    height: 130px;
     display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
-.logo>h2{
-    font-size: 30px;
-    color: #e1e1e1;
-    animation: luminosidade;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-@keyframes luminosidade {
-    0%{
-        text-shadow: 0px 0px 0px;
-    }
-    50%{
-        text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
-    }
-    100%{
-        text-shadow: 0px 0px 0px;
-    }
-}
-.entrar>h3{
+.trens>div{
+    display: flex;
+    justify-content: space-around;
     font-size: 25px;
-    padding: 10px;
-    margin: 10px;
-    color: #e1e1e1;
     transition: color 1s;
 }
-.entrar>h3:hover{
-    color: hsl(246, 100%, 72%);
+.trens>div>h4{
+    padding: 10px;
+    font-size: 30px;
+    color: #2cb856;
+    transition: color 1s;
 }
+.trens>div>h4:hover{
+    color: #2cb8b3;
+}
+/*  */
+.links{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.links>article{
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.links>article>h3{
+    font-size: 23px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px;
+    padding: 20px 10px 20px 10px;
+}
+/*  */
 footer{
     background-color: #181818;
     padding: 10px;

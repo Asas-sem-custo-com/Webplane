@@ -1,34 +1,123 @@
 h4{
     font-size: 50px;
 }
-.intro{
-    display: flex;
-    justify-content: space-between; 
-    padding: 20px;
-    padding-top: 0px;
+.bar{
+    position: fixed;
+    height: 10px;
+    width: 0%;
+    background: rgb(54,233,25);
+    background: linear-gradient(320deg, rgba(54,233,25,1) 0%, rgba(46,200,137,1) 50%, rgba(6,183,226,1) 100%);
+    z-index: 3;
+    top: 90px;
+    animation: andar-dir linear;
+    animation-timeline: scroll();
 }
-.intro>div{
-    width: 500px;
-    margin: 10px;
+.aviaozinho{
+    position: relative;
+    left: -40px;
+    top: -5px;
+    animation: andar-dir-avi linear;
+    animation-timeline: scroll();
 }
-.sonhos{
-    padding: 30px;
+@keyframes andar-dir {
+    to{width: 100%;border-radius: 0px 10px 10px 0px;}
 }
-.sonhos>h4{
-    font-size: 50px;
-    color: #e1e1e1;
+@keyframes andar-dir-avi {
+    to{left: 97%; }
+}
+.principal{
+    width: 1000px;
 }
 .principal>div{
     width: 500px;
+}
+.escolhido{
+    background-color: #05cf38;
+    z-index: 1;
+}
+.ex{
+    background-color: #058324;
+    z-index: -1;
+}
+.agende{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-image: url(icons.jpg);
+    background-size: 70px 70px;
+    margin: 0px;
+    width: 100vw;
+    box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.75);
+}
+.agende div{
+    width: 850px;
+}
+.agende div>h2{
+    font-size: 30px;
+}
+.agende div>div{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.agend label{
+    margin: 5px;
+}
+.submt{
+    padding: 20px; 
+    background-color: #05cf38; 
+    font-size:20px; 
+    border: 0px; 
+    border-radius: 5px; 
+    margin-top: 15px;
+}
+.inp-name, .inp-email, .inp-agente, .inp-place{
+    margin: 5px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    position: left;
+    border: 1px solid #2f2f2f;
+    padding-left: 23px;
+}
+.inp-email{
+    background-image: url(icon-aroba.png);
+}
+.inp-agente{
+    background-image: url(icon-agente.webp);
+}
+.inp-date::-webkit-calendar-picker-indicator{
+    background-image: url(icon-calendar.webp);
+}
+.inp-place{
+    background-image: url(icon-filial.png);
+}
+/*  */
+.sonhos{
+    padding: 30px;
+    width: 100vw;
+    background-color: #181818;
+}
+.sonhos>div{
+    display: grid;
+    justify-content: center;
+}
+.sonhos>div>h4{
+    font-size: 50px;
+    color: #e1e1e1;
 }
 .imgs{
     width: 800px;
 }
 .imgs1,.imgs2,.imgs3,.imgs4,.imgs5,.imgs6,.imgs7{
+    position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: width 2s, height 2s, color 2s;
+    scale: 1 1;
+    transition: scale 1s, color 2s,z-index 1s,box-shadow 1s;
 }
 .imgs1{
     background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/663445-abacaxi-com-oculos-vetor.jpg');
@@ -53,12 +142,10 @@ h4{
     background-image: url('https://i0.statig.com.br/bancodeimagens/2c/gh/gh/2cghghrjt3ul7qkrxzcfpezvh.jpg');
 }
 .imgs1:hover,.imgs2:hover,.imgs3:hover,.imgs4:hover,.imgs5:hover,.imgs6:hover,.imgs7:hover{
-    width: 1000px;
-    height: 500px;
-}
-.sonhos{
-    width: auto;
-    background-color: #181818;
+    scale: 1.15 1.15;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+
 }
 .imgs>div>figure{
     width: 800px;
@@ -74,14 +161,20 @@ h4{
 .history{
     padding: 10px;
     margin: 10px;
+    width: 100vw;
+
 }
 .history>div{
-    display: flex;
+    width: 1000px;
+    margin: 0px auto 0px auto;
 }
 .history>div>div{
+    display: flex;
+}
+.history>div>div>div{
     padding: 10px;
 }
-.history>p{
+.history>div>p{
     width: 500px;
 }
 .f-img1,.f-img2,.f-img3,.f-img4{
