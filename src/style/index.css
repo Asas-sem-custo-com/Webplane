@@ -25,12 +25,6 @@ h4{
 @keyframes andar-dir-avi {
     to{left: 97%; }
 }
-.principal{
-    width: 1000px;
-}
-.principal>div{
-    width: 500px;
-}
 .escolhido{
     background-color: #05cf38;
     z-index: 1;
@@ -38,6 +32,11 @@ h4{
 .ex{
     background-color: #058324;
     z-index: -1;
+    transition: background-color 1s, z-index 1s;
+}
+.ex:hover{
+    background-color: #05cf38;
+    z-index: 1;
 }
 .agende{
     display: flex;
@@ -65,14 +64,7 @@ h4{
 .agend label{
     margin: 5px;
 }
-.submt{
-    padding: 20px; 
-    background-color: #05cf38; 
-    font-size:20px; 
-    border: 0px; 
-    border-radius: 5px; 
-    margin-top: 15px;
-}
+/*  */
 .inp-name, .inp-email, .inp-agente, .inp-place{
     margin: 5px;
     background-position: left;
@@ -93,6 +85,23 @@ h4{
 }
 .inp-place{
     background-image: url(icon-filial.png);
+}
+.submt{
+    padding: 20px; 
+    background-color: #05cf38; 
+    font-size:20px; 
+    border: 0px; 
+    border-radius: 5px; 
+    margin-top: 15px;
+}
+/*  */
+.motivos{
+    display: flex;
+    justify-content: center;
+}
+.motivos>div{
+    width: 1000px;
+    padding: 25px;
 }
 /*  */
 .sonhos{
@@ -150,7 +159,7 @@ h4{
 .imgs>div>figure{
     width: 800px;
     height: 400px;
-    margin: 10px;
+    margin: 20px;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -159,14 +168,13 @@ h4{
 }
 /*  */
 .history{
-    padding: 10px;
-    margin: 10px;
     width: 100vw;
+    display: flex;
+    justify-content: center;
 
 }
 .history>div{
-    width: 1000px;
-    margin: 0px auto 0px auto;
+    width: 900px;
 }
 .history>div>div{
     display: flex;
@@ -175,7 +183,7 @@ h4{
     padding: 10px;
 }
 .history>div>p{
-    width: 500px;
+    width: 450px;
 }
 .f-img1,.f-img2,.f-img3,.f-img4{
     height: 200px;

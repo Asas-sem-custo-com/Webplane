@@ -42,11 +42,11 @@ header>div{
 .trens>div>h4{
     padding: 10px;
     font-size: 30px;
-    color: #2cb856;
+    color: #2cb8b3;
     transition: color 1s;
 }
 .trens>div>h4:hover{
-    color: #2cb8b3;
+    color: #056515;
 }
 /*  */
 .links{
@@ -66,15 +66,22 @@ header>div{
     padding: 20px 10px 20px 10px;
 }
 /*  */
+.as{
+    display: flex;
+    justify-content: center;
+}
+.as>h4{
+    color: #e1e1e1;
+}
 footer{
     background-color: #181818;
     padding: 10px;
 }
-footer>h4{
+footer>div>h4{
     color: #e1e1e1;
     text-align: center;
 }
-footer>div{
+footer>div>div{
     display: flex;
     justify-content: space-around;
 }
