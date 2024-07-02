@@ -72,6 +72,7 @@ header>div{
 }
 .as>h4{
     color: #e1e1e1;
+    font-size: 50px;
 }
 footer{
     background-color: #181818;
@@ -79,9 +80,16 @@ footer{
 }
 footer>div>h4{
     color: #e1e1e1;
-    text-align: center;
 }
 footer>div>div{
     display: flex;
     justify-content: space-around;
+}
+.f-img1,.f-img2,.f-img3,.f-img4{
+    height: 200px;
+    border-radius: 20px;
+    transition: box-shadow 2s;
+}
+.f-img1:hover,.f-img2:hover,.f-img3:hover,.f-img4:hover{
+    box-shadow: 10px 10px 0px 0px rgba(255, 244, 244, 0.75);
 }
