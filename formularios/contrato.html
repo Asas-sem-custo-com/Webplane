@@ -10,38 +10,42 @@
     <!--  -->
     <title>formularios</title>
 </head>
-<body>
-    
+<body>    
     <header>
         <div>
             <div class="trens">
-                <a href="../index.html" target="_blank"><img src="../src/img/AS-cor.png" alt="ASC" height="70" style="margin-top: 40px; margin-bottom: 40px; margin-bottom: auto;"></a>
+                <a href="../index.html"><img src="../src/img/AS-cor.png" alt="ASC" height="70" style="margin-top: 40px; margin-bottom: 40px; margin-bottom: auto;"></a>
                 <div>
-                    <h4>Login</h4>
-                    <h4>Sign in</h4>
+                    <h4>
+                        <a href="./sing_in.html">Sign in</a>
+                    </h4>
                 </div>
             </div>
         </div>
     </header>
-    <main>
+    <main class="contrato_main">
         <article class="contrato_forms"> 
             <form class="formul">
                 <h3>Contrato</h3>                        
                 <label for="">Nome</label>
                 <input type="text" value="">
-                <label for="">Email</label>
+                <label for="">Telefone</label>
                 <br>
-                <input type="text" required>
-                <br>            
-                <label for="">Senha</label>
-                <br>
-                <input type="password" required>
+                <input type="tel" required>
                 <br>            
                 <label for="">Data de nascimento</label>
                 <br>
                 <input type="date" required>
-                <br>            
-                <label for="">Numero do cartão de CRÉDITO</label>
+                <br>
+                <label for="">Foto do RG</label>
+                <br>
+                <input type="file" required>
+                <br>
+                <label for="">Foto da CLT</label>
+                <br>
+                <input type="file" required>
+                <br>
+                <label for="">Numero do cartão de CRÉDITO/Débito</label>
                 <br>
                 <input type="text" required>
                 <br>            
@@ -58,7 +62,7 @@
                 <label for="">
                     <a href="">Li e aceito termos e condições da As.SA</a><!--Link dos termos e condições-->
                 </label>
-                <input type="submit" value="Boa Viagem!">
+                <input type="submit" value="Assinar" form="./cadastro.html">
             </form>
         </article>
     </main>

@@ -1,17 +1,26 @@
 body{
     margin: 0px;
 }
-main{
-    background-image: url(../../../src/style/icons.jpg);
+.contrato_main, .criar_main{
+    padding: 10px;
     background-position: center;
+    background-image: url(../../../src/style/icons.jpg);
+}
+.contrato_main{
     background-size: 70px 70px;
 }
-.contrato_forms{
+.criar_main{
+    background-size: 300px 300px;
+    background-color: #05cf38;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.contrato_forms, .criar_forms{
     display: flex;
     justify-content: center;
     width: 100vw;
 }
-.formul{
+.formul, .criar{
     background-color: #d3d3d3;
     color: #181818;
     text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
@@ -22,7 +31,7 @@ main{
     justify-content: center;
     width: 500px;
 }
-.formul h3{
+.formul h3, .criar_main h3{
     font-size: 40px;
     text-align: center;
 }
@@ -38,15 +47,11 @@ input, select{
     box-sizing: border-box;
     
 }
-
-.img_inutil{
-    padding: 12px;
+.quase{
+    display: flex;
+    justify-content: center;
 }
-.logo>h2{
-    font-size: 30px;
-    color: #e1e1e1;
-    animation: luminosidade;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-
+.quase>div>h3{
+    font-size: 40px;
+    margin: 0px;
 }
