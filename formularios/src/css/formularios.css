@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+}
+.contrato_main, .criar_main{
+    padding: 10px;
+    background-position: center;
+    background-image: url(../../../src/style/icons.jpg);
+}
+.contrato_main{
+    background-size: 70px 70px;
+}
+.criar_main{
+    background-size: 300px 300px;
+    background-color: #05cf38;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.contrato_forms, .criar_forms{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.formul, .criar{
+    background-color: #d3d3d3;
+    color: #181818;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+    border: #8a8a8a69 solid 2px;    
+    padding: 10px;
+    margin: 10px;
+    border-radius: 14px;
+    justify-content: center;
+    width: 500px;
+}
+.formul h3, .criar_main h3{
+    font-size: 40px;
+    text-align: center;
+}
+input, select{
+    opacity: 50%;
+    height: 40px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+.quase{
+    display: flex;
+    justify-content: center;
+}
+.quase>div>h3{
+    font-size: 40px;
+    margin: 0px;
+}
