@@ -1,6 +1,49 @@
 h4{
     font-size: 50px;
 }
+/*  */
+@media (prefers-reduced-motion: no-preference) {
+    div{
+        scale: .8;
+        opacity: 0;
+        animation: aparecer linear forwards;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+    @keyframes aparecer{
+        to{scale:1;opacity: 1;}
+    }   
+}
+/*  */
+.rolar{
+    overflow: hidden;
+    padding: 10px;
+    background-color: #181818;
+    user-select: none;
+    animation: arasta 60s linear infinite;
+    margin: 0px 10px 20px 0px;
+    display: flex;
+    gap: 2rem;
+}
+.rolar>div{
+    display: flex;
+    gap: 2rem;
+}
+.rolar img{
+    height: 250px;
+    border-radius: 10px;
+}
+.rolar figure p{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    color: #e1e1e1;
+}
+@keyframes arasta{
+    to{
+        transform: translateX(-100%);
+    }
+}
 .bar{
     position: fixed;
     height: 10px;

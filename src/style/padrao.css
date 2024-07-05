@@ -7,9 +7,9 @@ body{
     margin: 0px;
     background-color: #e0dfff;
 }
-main{
+/* main{
     overflow: hidden;
-}
+} */
 /*  */
 header{
     position: relative;
@@ -80,6 +80,7 @@ header>div{
     font-size: 50px;
 }
 footer{
+    overflow:hidden;
     background-color: #181818;
     padding: 10px;
     box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.75);
