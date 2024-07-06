@@ -7,9 +7,6 @@ body{
     margin: 0px;
     background-color: #e0dfff;
 }
-/* main{
-    overflow: hidden;
-} */
 /*  */
 header{
     position: relative;
@@ -55,7 +52,7 @@ header>div{
 }
 /*  */
 .links{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -70,6 +67,11 @@ header>div{
     margin: 0px;
     padding: 20px 10px 20px 10px;
 }
+.links:hover{
+    .ex{
+        z-index: 1;
+    }
+}
 /*  */
 .as{
     display: flex;
@@ -80,10 +82,10 @@ header>div{
     font-size: 50px;
 }
 footer{
-    overflow:hidden;
     background-color: #181818;
-    padding: 10px;
-    box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.75);
+    padding: 20px 0px 0px 0px   ;
+    width: 100vw;
+    /* box-shadow: -5px -5px 12px 0px rgba(0,0,0,0.75); */
 }
 footer>div>h4{
     color: #e1e1e1;

@@ -2,6 +2,25 @@ h4{
     font-size: 50px;
 }
 /*  */
+.bar{
+    position: fixed;
+    height: 10px;
+    width: 0%;
+    background: rgb(54,233,25);
+    background: linear-gradient(320deg, rgba(54,233,25,1) 0%, rgba(46,200,137,1) 50%, rgba(6,183,226,1) 100%);
+    z-index: 3;
+    top: 90px;
+    animation: andar-dir linear;
+    animation-timeline: scroll();
+}
+.aviaozinho{
+    position: relative;
+    left: -40px;
+    top: -5px;
+    animation: andar-dir-avi linear;
+    animation-timeline: scroll();
+}
+/*  */
 @media (prefers-reduced-motion: no-preference) {
     div{
         scale: .8;
@@ -17,21 +36,21 @@ h4{
 /*  */
 .rolar{
     overflow: hidden;
+    width: 100vw;
     padding: 10px;
     background-color: #181818;
-    user-select: none;
-    animation: arasta 60s linear infinite;
-    margin: 0px 10px 20px 0px;
+    margin: 0px 0px 20px 0px;
     display: flex;
-    gap: 2rem;
 }
-.rolar>div{
+.rolar>article{
+    animation: arasta 60s linear infinite;
     display: flex;
-    gap: 2rem;
+    width: max-content;
 }
 .rolar img{
     height: 250px;
     border-radius: 10px;
+
 }
 .rolar figure p{
     margin: 0px;
@@ -84,12 +103,9 @@ h4{
 .agende{
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     padding: 30px;
     background-image: url(icons.jpg);
     background-size: 70px 70px;
-    margin: 0px;
     width: 100vw;
     box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.75);
 }
@@ -138,13 +154,26 @@ h4{
     margin-top: 15px;
 }
 /*  */
-.motivos{
+.motivos, .comentario{
     display: flex;
     justify-content: center;
 }
-.motivos>div{
+.motivos>div, .comentario>div{
     width: 1000px;
     padding: 25px;
+}
+.comentario>div{
+    display: flex;
+    align-items: flex-start;
+}
+.comentario img{
+    position: relative;
+    object-position: 70% 0;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 60px;
+    padding: 10px;
 }
 /*  */
 .sonhos{
