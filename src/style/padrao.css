@@ -53,29 +53,7 @@ header>div{
 .trens>div>h4>a:hover{
     color: #056515;
 }
-/*  */
-.links{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.links>article{
-    width: 1000px;
-    display: flex;
-    justify-content: space-around;
-}
-.links>article>h3{
-    font-size: 23px;
-    border-radius: 10px 10px 0px 0px;
-    margin: 0px;
-    padding: 20px 10px 20px 10px;
-}
-.links:hover{
-    .ex{
-        z-index: 1;
-    }
-}
-/*  */
+
 .as{
     display: flex;
     justify-content: center;
