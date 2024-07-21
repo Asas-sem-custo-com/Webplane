@@ -1,0 +1,39 @@
+*{
+    list-style: none;
+}
+.conts img{
+    object-position: 70% 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.conts{
+    padding: 30px;
+}
+.conts>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conts>h3{
+    font-size: 40px;
+    text-align: center;
+}
+.conts>div>div{
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    background-color: #181818;
+    color:white;
+    border-radius: 20px;
+    transition: color 1s, background-color 1s;
+}
+.conts>div>div:hover{
+    background-color: #49ff71;
+    color:#181818;
+}
+.conts>div>div>img{
+    margin-left: auto;
+    margin-right: auto;
+}
