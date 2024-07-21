@@ -29,6 +29,7 @@
     border-radius: 20px;
     transition: color 1s, background-color 1s;
     margin: 10px;
+    width: 500px;
 }
 .conts>div>div:hover{
     background-color: #49ff71;
