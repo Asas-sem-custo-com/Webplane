@@ -36,7 +36,7 @@ h4{
 /*  */
 .rolar{
     overflow: hidden;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 10px;
     background-color: #181818;
     margin: 0px 0px 20px 0px;
@@ -92,28 +92,6 @@ h4{
     z-index: 1;
 }
 /*  */
-.links{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.links>article{
-    width: 1000px;
-    display: flex;
-    justify-content: space-around;
-}
-.links>article>h3{
-    font-size: 23px;
-    border-radius: 10px 10px 0px 0px;
-    margin: 0px;
-    padding: 20px 10px 20px 10px;
-}
-.links:hover{
-    .ex{
-        z-index: 1;
-    }
-}
-/*  */
 .ex{
     background-color: #058324;
     /* z-index: -1;/ */
@@ -129,7 +107,7 @@ h4{
     padding: 30px;
     background-image: url(icons.jpg);
     background-size: 70px 70px;
-    width: 100vw;
+    /* width: 100vw; */
     box-shadow: 0px -5px 17px 0px rgba(0,0,0,0.75);
 }
 .agende div{
@@ -201,7 +179,7 @@ h4{
 /*  */
 .sonhos{
     padding: 30px;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: #181818;
 }
 .sonhos>div{
@@ -263,7 +241,7 @@ h4{
 }
 /*  */
 .history{
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
 

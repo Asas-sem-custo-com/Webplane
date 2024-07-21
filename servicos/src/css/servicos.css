@@ -1,0 +1,92 @@
+.servi{
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+.servi>div>h3{
+    font-size: 40px;
+    width: 400px;
+}
+.servi>div{
+    display:flex;
+    flex-wrap: wrap;
+}
+.servi>div>div{
+    width: 200px;
+}
+.p1>img,.p2>img{
+    position: relative;
+    height: 100px;
+    border-radius: 100%;
+}
+.p1>p,.p2>p{
+    position: relative;
+}
+.p1>p{
+    top: 350px;
+    left: 100px;
+}
+.p1 img{
+    top: 400px;
+}
+.p2 img{
+    top: 500px;
+    left: 50px;
+    object-position: 70% 0;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.p2 p{
+    top: 490px;
+    left: 90px;
+}
+/*  */
+.ofer{
+    padding-top: 20px;
+}
+.ofer>div{
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    scale: 1 1;
+    transition: background-color 1s, scale 1s,rotate 1s;
+}
+.ofer>div:hover{
+    background-color: #2cb8b3;
+    scale: 1.1 1.1;
+    rotate: 10deg;
+    z-index: 1;
+
+}
+.ofer>div>h4{
+    font-size: 30px;
+}
+/*  */
+/*  */
+.ser{
+    background-image: url('../../../src/style/icons.jpg');
+    background-position: center;
+    background-size: 70px;
+}
+.ser>article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ser>article>div{
+    background-color: hsl(110, 100%, 92%);
+    width: 240px;
+    padding: 10px;
+    margin: 14px;
+    border-radius: 10px;
+    transition: box-shadow 1s,background-color 1s;
+}
+.ser>article>div>h4{
+    text-align: center;
+}
+.ser>article>div:hover{
+    background-color: #91ff7b;
+    box-shadow: 6px 4px 24px 0px rgba(0,0,0,0.75);
+}

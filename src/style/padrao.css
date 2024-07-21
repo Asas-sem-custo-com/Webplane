@@ -6,6 +6,13 @@
     font-family: "Nunito", sans-serif;
     font-size:17px;
 }
+a{
+    color: #2cb8b3;
+    text-decoration: none;
+}
+a:hover{
+    color: #056515;
+}
 body{
     margin: 0px;
     background-color: #e0dfff;
@@ -24,6 +31,28 @@ header>div{
     padding-top: 15px;
     position: fixed;
     backdrop-filter: blur(10px);
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.links>article{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.links>article>h3{
+    font-size: 23px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px;
+    padding: 20px 10px 20px 10px;
+}
+.links:hover{
+    .ex{
+        z-index: 1;
+    }
 }
 .trens{
     width: 1000px;
@@ -65,8 +94,7 @@ header>div{
 footer{
     background-color: #181818;
     padding: 20px 0px 0px 0px   ;
-    width: 100vw;
-    /* box-shadow: -5px -5px 12px 0px rgba(0,0,0,0.75); */
+    box-shadow: -5px -5px 12px 0px rgba(0,0,0,0.75);
 }
 footer>div>h4{
     color: #e1e1e1;
