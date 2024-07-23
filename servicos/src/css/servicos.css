@@ -1,3 +1,38 @@
+.escolhido{
+    background-color: #05cf38;  
+    z-index: 1;
+}
+.ex{
+    background-color: #058324;
+    /* z-index: -1;/ */
+    transition: background-color 1s, z-index 1s;
+}
+.ex:hover{
+    background-color: #05cf38;
+    z-index: 1;
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.links>article{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.links>article>h3{
+    font-size: 23px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px;
+    padding: 20px 10px 20px 10px;
+}
+.links:hover{
+    .ex{
+        z-index: 1;
+    }
+}
 .servi{
     display: grid;
     justify-content: center;
